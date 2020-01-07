@@ -15,10 +15,10 @@ class BurgerBuilder extends Component {
   state = {
     ingredients: {
       //adding Key-value pairs
-      salad: 1,
-      backon: 1,
-      cheese: 2,
-      meat: 2, 
+      salad: 0,
+      backon: 0,
+      cheese: 0,
+      meat: 0, 
     }
   }
   render() {
