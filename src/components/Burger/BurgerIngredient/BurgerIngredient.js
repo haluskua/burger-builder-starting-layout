@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import classes from './BurgerIngredient';
+import classes from "./BurgerIngredient.css";
 import PropTypes from "prop-types";
 
 class BurgerIngredient extends Component {
@@ -13,21 +13,21 @@ class BurgerIngredient extends Component {
       case "bread-top":
         ingredient = (
           <div className={classes.BreadTop}>
-            <div classes={classes.Seeds1}></div>
-            <div classes={classes.Seeds2}></div>
+            <div className={classes.Seeds1}></div>
+            <div className={classes.Seeds2}></div>
           </div>
         );
         break;
       case "meat":
         ingredient = <div className={classes.Meat}></div>;
         break;
-      case "meat":
+      case "cheese":
         ingredient = <div className={classes.Cheese}></div>;
         break;
-      case "meat":
+      case "Bacon":
         ingredient = <div className={classes.Bacon}></div>;
         break;
-      case "meat":
+      case "Salad":
         ingredient = <div className={classes.Salad}></div>;
         break;
       default:
@@ -39,8 +39,8 @@ class BurgerIngredient extends Component {
 
 //proptype Validation
 
-BurgerIngredient.PropTypes = {
-    type: ProptTypes.string.isRequired
-}
+BurgerIngredient.propTypes = {
+  type: PropTypes.string.isRequired
+};
 
 export default BurgerIngredient;

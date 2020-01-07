@@ -6,11 +6,11 @@ import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 class App extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Layout>
           <BurgerBuilder />
         </Layout>
-      </div>
+      </React.Fragment>
     );
   }
 }
